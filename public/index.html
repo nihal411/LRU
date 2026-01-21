@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>LRU Cache Demo</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<h1>LRU Cache Demo</h1>
+
+
+<div class="controls">
+<label>Capacity: <input id="capacity" type="number" min="1" value="3" /></label>
+<button id="setCap">Set Capacity</button>
+</div>
+
+
+<div class="oprow">
+<div class="op">
+<h3>PUT</h3>
+<input id="putKey" placeholder="Key (int)" />
+<input id="putVal" placeholder="Value (string)" />
+<button id="putBtn">Put</button>
+</div>
+
+
+<div class="op">
+<h3>GET</h3>
+<input id="getKey" placeholder="Key (int)" />
+<button id="getBtn">Get</button>
+</div>
+</div>
+
+
+<section>
+<h3>Cache (most-recent → least-recent)</h3>
+<div id="cacheArea" class="cacheArea"></div>
+</section>
+
+
+<section>
+<h3>Log</h3>
+<div id="log" class="log"></div>
+</section>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
